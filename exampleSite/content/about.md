@@ -29,7 +29,7 @@ experience:
   title: "Szakmai tapasztalat"
   experience_list:
   - "Szegedi Tudományegyetem - Demonstrátor (számítógép hálózatok, 2022 ősz)"
-  - "Enterprise Group - Junior Java szoftverfejlesztő (2023. február - augusztus)"
+  - "Enterprise Group - Junior Java developer (2023. február-augusztus)"
   - "FintechX - Business Analyst (2024. február - )"
   - "Brain Bar - Diáknagykövet (2023 - )"
 ---

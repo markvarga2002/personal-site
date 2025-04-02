@@ -6,7 +6,7 @@ date: 2023-01-24T18:19:25+06:00
 categories: ["tutorial"]
 tags: ["docs"]
 type: "featured" # available types: [featured/regular]
-draft: false
+draft: true
 sitemapExclude: false
 ---
 

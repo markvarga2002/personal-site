@@ -1,25 +1,25 @@
 ---
-title: "Let's, Talk About You"
-description: "this is meta-description"
+title: "Beszéljünk rólad"
+description: "Lépj velem kapcsolatba, és osszd meg velem a gondolataidat!"
 layout: "contact"
 draft: false
 
-message: "Let's, Talk About You"
-button_text: "Send Now"
+message: "Beszéljünk rólad"
+button_text: "Üzenet küldése"
 
-instruction_a: "Send Us A"
-instruction_b: " message"
+instruction_a: "Írj nekem egy "
+instruction_b: "üzenetet, és hamarosan válaszolok!"
 
-full_name_title: "Full name"
-full_name_placeholder: "Thomas Milano"
+full_name_title: "Teljes név"
+full_name_placeholder: "Kovács Botond"
 
-email_title: "Email Address"
-email_placeholder: "example@email.com"
+email_title: "E-mail cím"
+email_placeholder: "pelda@email.com"
 
-subject_title: "Subject"
-subject_placeholder: "Blog advertisement"
+subject_title: "Tárgy"
+subject_placeholder: "Kérdés"
 
-content_title: "Your Message Here"
-content_placeholder: "Hello I’m Mr ‘x’ from.............."
+content_title: "Üzeneted"
+content_placeholder: "Üdv! Azért írok, mert szeretnék többet megtudni a ..."
 
 ---

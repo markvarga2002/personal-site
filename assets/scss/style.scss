@@ -1,14 +1,14 @@
 // Color Variables
 {{ with site.Params.variables }}
-$color-primary: {{.color_primary | default "#FDB310"}};
-$text-color: {{.text_color | default "#777"}};
-$text-dark: {{.text_dark | default "#222"}};
-$text-light: {{.text_light | default "#999"}};
-$body-color: {{.body_color | default "#fff"}};
-$border-color: {{.border_color | default "#ECECEC"}};
-$black: {{.black | default "#000"}};
-$white: {{.white | default "#fff"}};
-$light: {{.light | default "#EDF6F5"}};
+$color-primary: {{.color_primary | default "#0C2D48"}}; /* Sötétkék */
+$text-color: {{.text_color | default "#333333"}}; /* Sötétszürke */
+$text-dark: {{.text_dark | default "#222222"}}; /* Sötét szürke */
+$text-light: {{.text_light | default "#F0F0F0"}}; /* Világos szürke */
+$body-color: {{.body_color | default "#FFFFFF"}}; /* Fehér */
+$border-color: {{.border_color | default "#ECECEC"}}; /* Világos szürke */
+$black: {{.black | default "#000000"}}; /* Fekete */
+$white: {{.white | default "#FFFFFF"}}; /* Fehér */
+$light: {{.light | default "#F9CDAE"}}; /* Pasztell sárga */
 
 
 // Font Variables

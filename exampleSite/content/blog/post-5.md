@@ -6,7 +6,7 @@ date: 2021-01-24T18:19:25+06:00
 categories: ["workstation"]
 tags: ["lifestyle"]
 type: "featured" # available types: [featured/regular]
-draft: false
+draft: true
 sitemapExclude: false
 ---
 
