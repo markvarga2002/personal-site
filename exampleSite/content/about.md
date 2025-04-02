@@ -1,6 +1,6 @@
 ---
-title: "About The Author"
-description: "this is meta-description"
+title: "Önéletrajz"
+description: "Bemutatkozás"
 image: "images/author.png"
 layout: "about"
 draft: false
@@ -8,36 +8,36 @@ draft: false
 # education
 education:
   enable: true
-  title: "Formal Education"
+  title: "Tanulmányok"
   education_list:
-  - name: "Southeast University"
-    content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
-  - name: "Northeast University"
-    content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
-  - name: "Easteast University"
-    content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
-  - name: "Southeast University"
-    content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
+  - name: "Szegedi Tudományegyetem"
+    content: "2021 - 2025 • Gazdaságinformatikus (BSc) hallgató"
+  - name: "Gábor Dénes Szakgimnázium"
+    content: "2017 - 2021 • Informatika ágazat"
+  - name: "Mathias Corvinus Collegium (MCC)"
+    content: "2021 - 2022 • Juniorképzés"
+  - name: "Mathias Corvinus Collegium (MCC)"
+    content: "2022 - 2024 • Közgazdasági Iskola"
+  - name: "Eötvös Loránd Szakkollégium"
+    content: "2021 - 2022 • Külsős tag"
+  - name: "Modul University Vienna"
+    content: "2024 Jun • Summer School • The World of Startups in CEE"
 
 # experience
 experience:
   enable: true
-  title: "Work Experience"
+  title: "Szakmai tapasztalat"
   experience_list:
-  - "Best Writer Award"
-  - "Best New Newel"
-  - "Best Book"
-  - "Best Article"
-  - "Best New Newel"
-  - "Best New Newel"
-  - "Best Book"
-  - "Best Article"
-  - "Best New Newel"
-  - "Best Book"
-
+  - "Szegedi Tudományegyetem - Demonstrátor (számítógép hálózatok, 2022 ősz)"
+  - "Enterprise Group - Junior Java szoftverfejlesztő (2023. február - augusztus)"
+  - "FintechX - Business Analyst (2024. február - )"
+  - "Brain Bar - Diáknagykövet (2023 - )"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi amet, ultrices scelerisue cras. Tincidunt hendrerit egestas venenatis risus sit nunc. Est esglit non in ipsum lect;aaus adipiscing et enim porttitor. Dui ultrices et volud eetpat nunc, turpis rutrum elit vestibululm ipsum. Arcu fringilla duis vitae mos dsdllis duicras interdum purus cursus massa metus. Acc umsan felaais, egsdvet nisi, viverra turpis fermentum sit suspf bafedfb ndisse fermentum consectetur. Facilisis feugiat trisique orci tempor sed masd fbsssa tristique ultrices sodales. Augue est sapien elementum facilisis. Enim tincidnt cras interdum purus  ndisse.  morbi quis nunc.
+Varga Márk vagyok, gazdaságinformatikus, a Szegedi Tudományegyetemen végeztem. Mindig is érdekelt a technológia és az üzleti folyamatok kapcsolata, ezért tanulmányaim és szakmai tapasztalataim is ezen a területen összpontosulnak.
 
+Korábban szoftverfejlesztésben is szereztem tapasztalatot, emellett aktívan jelen vagyok az üzleti világban is.
 
-Et dolor placerat tempus risus nunc urna, nunc a. Mattis viverra ut sapidaaen enim sed tortor. Mattis gravida fusce cras interdum purus cursus massa metus. Acc umsan felaais, eget nisi, viverra turpis fermentum sit suspf bafedfb ndisse.  morbi quis nunc, at arcu quam facilisi. In in lacus aliquam dictum sagittis morbi odio. Et magnis cursus sem sed condimentum. Nibh non potenti ac amsdfet Tincidunt hendrerit egestas venenatis risus sit nunc. Est esglit non in ipsuasdm lect;aaus adipiscing et enim porttitor. Dui ultrices et volud eetpat nunc, turpis  ndisse.  morbi quis nunc, at arcu quam facilisi  ndisse.  morbi quis nunc, at arcu quam facilisi
+2021 áprilisában megjelent egy Linux alapokat bemutató vizsgafelkészítő könyvem. Fontos számomra a folyamatos fejlődés és a tudásmegosztás, ezért igyekszem részt venni minél több szakmai eseményen.
+
+Szabadidőmben szívesen kísérletezem új technológiákkal, és keresem azokat az innovációs lehetőségeket, amelyek gyakorlati hatással lehetnek a mindennapi életre. Emellett figyelemmel követem az üzleti trendeket és a digitális megoldások fejlődését.
