@@ -18,7 +18,7 @@ image = "images/logo.png" # this image will be used as fallback if a page has no
 address = "Hungary, Szeged"
 email = "hello@vargamark.site"
 # contact form action
-contact_form_action = "https://formspree.io" # contact form works with 
+contact_form_action = "https://formspree.io/f/xjkyawyj" # contact form works with 
 # search
 search = true
 
