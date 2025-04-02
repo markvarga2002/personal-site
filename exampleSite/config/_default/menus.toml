@@ -2,55 +2,55 @@
 
 # main menu
 [[main]]
-name = "Home"
+name = "Kezdőlap"
 url = ""
 weight = 1
 
 [[main]]
-name = "About"
+name = "Rólam"
 url = "about/"
 weight = 2
 
 [[main]]
-name = "Contact"
+name = "Kapcsolat"
 url = "contact/"
 weight = 3
 
 [[main]]
-name = "Pages"
+name = "Oldalak"
 url = "#"
 weight = 3
 hasChildren = true
 
   [[main]]
-  parent = "Pages"
-  name = "Tags"
+  parent = "Oldalak"
+  name = "Címkék"
   url = "tags/"
   weight = 1
 
   [[main]]
-  parent = "Pages"
-  name = "Categories"
+  parent = "Oldalak"
+  name = "Kategóriák"
   url = "categories/"
   weight = 2
 
 # footer menu
 [[footer]]
-name = "Home"
+name = "Kezdőlap"
 url = "/"
 weight = 1
 
 [[footer]]
-name = "About"
+name = "Rólam"
 url = "about/"
 weight = 2
 
 [[footer]]
-name = "Contact"
+name = "Kapcsolat"
 url = "contact/"
 weight = 3
 
 [[footer]]
-name = "Privacy Policy"
+name = "Adatvédelmi irányelvek"
 url = "privacy-policy/"
 weight = 4

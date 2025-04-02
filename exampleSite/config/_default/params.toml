@@ -15,43 +15,42 @@ description = "This is meta description"
 author = "Themefisher"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 # contact info
-address = "9567 Turner Trace Apt. BC C3G8A4"
-mobile = "+211234565523"
-email = "info@email.com"
+address = "Hungary, Szeged"
+email = "hello@vargamark.site"
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
 # search
 search = true
 
 # Posts related Titles & Contents
-categories_title = "Blog Categories"
-posts_title = "Featured"
-featured_post_title = "Featured Post"
-recent_post_title = "Recent Post"
-featured_post_button = "Featured"
-recent_post_button = "Recent"
-read_more_button = "Read more"
-previous_button = "Previous"
-next_button = "Next"
-related_posts = "Related Posts"
-showing_posts = "Showing Post From"
-no_categories_found = "No Categories Found"
-no_tags_found = "No Tags Found"
+categories_title = "Blogkategóriák"
+posts_title = "Kiemelt"
+featured_post_title = "Kiemelt bejegyzés"
+recent_post_title = "Legutóbbi bejegyzés"
+featured_post_button = "Kiemelt"
+recent_post_button = "Legutóbbi"
+read_more_button = "Tovább olvasom"
+previous_button = "Előző"
+next_button = "Következő"
+related_posts = "Kapcsolódó bejegyzések"
+showing_posts = "Megjelenített bejegyzés innen"
+no_categories_found = "Nem található kategória"
+no_tags_found = "Nem található címke"
 
 mainSections = ["blog"]
 # about widget content
-about_widget_content = "Lorem ipsum dolor sit amet, conse tfctetur adipiscing elit. Vel in in donec iaculis tempasus odio nunc laoreet . Libero ullam rgscorper."
+about_widget_content = "Üdvözöllek a blogomon! Itt megosztom a gondolataimat, tapasztalataimat és hasznos információkat különböző témákban. Kövess, hogy ne maradj le az új bejegyzésekről!"
 # footer content
-footer_content = "Lorem ipsum dolor sit amt, conse adip iscing. donec iaculis tempasus laoreet. Libero ullam rgscper."
-# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
+footer_content = "Köszönöm, hogy ellátogattál a blogomra! Remélem, találsz számodra érdekes és értékes tartalmakat. Ha kérdésed van, bátran írj nekem!"
+# custom script on header, example: custom_script= "<script>console.log(\"Üdvözöllek a blogomon!\")</script>" 
 custom_script= ""
 # copyright
 theme_copyright = true
-copyright = "Copyright by your company"
+copyright = "Copyright © 2025 Varga Márk. Minden jog fenntartva."
 
 # 404
-error_404_text = "404 Page Not Found!"
-error_404_button = "Back To Home"
+error_404_text = "Hoppá! Eltévedtél az internet sötét zugában... 😱"
+error_404_button = "Vigyél vissza a biztonságba!"
 
 # Preloader
 [preloader]
@@ -61,25 +60,25 @@ preloader = "" # use jpg, png, svg or gif format.
 # Banner
 [banner]
 enable = true
-title_large = "Welcome **!**"
-title_small = "to Jhon Bravo Blog"
+title_large = "Üdvözöllek **!**"
+title_small = "Varga Márk blogján"
 image = "images/banner.png"
 background_image = "/images/banner-bg-shape.svg"
-content = "Are Developer and recently started your own business Already made website to ensure presence wants to develop."
-button_label = "Know About Me"
+content = "Gondolatok, történetek és hasznos tartalmak egy helyen. Nézz körül és fedezd fel a legújabb bejegyzéseimet!"
+button_label = "Tudj meg többet rólam"
 button_link = "about/"
 
 # Advertise
 [advertisement]
 image = "images/promotion.png"
-link = "https://gethugothemes.com/"
+link = "#"
 
 # cookies
 [cookies]
-enable = false
+enable = true
 expire_days = 2
-content = "This site uses cookies. By continuing to use this website, you agree to their use."
-button = "I Accept"
+content = "Ez a weboldal sütiket használ. A böngészés folytatásával elfogadod azok használatát."
+button = "Elfogadom"
 
 ######################## sidebar widgets #########################
 [widgets]
@@ -89,40 +88,30 @@ sidebar = ["about", "categories", "recent-post", "newsletter"]
 
 # Subscription
 [subscription]
-enable = false
-newsletter_title = "Newsletter"
-newsletter_invitation = "Join thousands of Tiny Salt subscribers and get our best recipes delivered each week!"
-newsletter_placeholder = "Type And Hit Enter"
-newsletter_reminder_a = "By Singing Up, You Agree To"
-newsletter_reminder_b = "Privacy Policy"
-newsletter_button = "Sign in"
+enable = true
+newsletter_title = "Hírlevél"
+newsletter_invitation = "Iratkozz fel, és értesülj elsőként a legújabb bejegyzéseimről!"
+newsletter_placeholder = "Írd be az e-mail címed és nyomj Entert"
+newsletter_reminder_a = "Feliratkozásoddal elfogadod az"
+newsletter_reminder_b = "Adatvédelmi szabályzatot"
+newsletter_button = "Feliratkozás"
 # mailchimp subsciption
-mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
-mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+mailchimp_form_action = "https://site.us12.list-manage.com/subscribe/post?u=3dd27dc3d0aaf3bde4088eac6&amp;id=6c3dd5cffd&amp;f_id=001584e0f0" # replace this url with yours
+mailchimp_form_name = "b_3dd27dc3d0aaf3bde4088eac6_6c3dd5cffd" # replace this code with yours
 
 
 ############################# social site ########################
 [[social]]
 title = "facebook"
 icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[social]]
-title = "twitter"
-icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.facebook.com/mark.varga.507/"
 
 [[social]]
 title = "instagram"
 icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
-
-[[social]]
-title = "github"
-icon = "fab fa-github" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+link = "https://www.instagram.com/varga.mark.00?igsh=eGFpYjJsNDVodzM5"
 
 [[social]]
 title = "linkedin"
 icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+link = "https://www.linkedin.com/in/m%C3%A1rk-varga-428349255/"
