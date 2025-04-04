@@ -1,10 +1,10 @@
 ---
-title: "Beszéljünk rólad"
+title: "Tegyél fel egy kérdést!"
 description: "Lépj velem kapcsolatba, és osszd meg velem a gondolataidat!"
 layout: "contact"
 draft: false
 
-message: "Beszéljünk rólad"
+message: "Tegyél fel egy kérdést!"
 button_text: "Üzenet küldése"
 
 instruction_a: "Írj nekem egy "

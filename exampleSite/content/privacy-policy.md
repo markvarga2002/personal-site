@@ -63,7 +63,7 @@ A személyes adatokat csak addig tároljuk, amíg az szükséges az adatkezelés
 
 Ha bármilyen kérdésed van az adatvédelmi szabályzattal vagy a személyes adataid kezelésével kapcsolatban, kérjük, vedd fel velünk a kapcsolatot az alábbi elérhetőségek egyikén:
 
-- E-mail: [info@vargamark.site]
+- E-mail: [hello@markvarga.site]
 
 ## 9. Adatvédelmi szabályzat módosításai
 

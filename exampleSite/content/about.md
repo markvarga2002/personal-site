@@ -10,8 +10,6 @@ education:
   enable: true
   title: "Tanulmányok"
   education_list:
-  - name: "Szegedi Tudományegyetem"
-    content: "2021 - 2025 • Gazdaságinformatikus (BSc) hallgató"
   - name: "Gábor Dénes Szakgimnázium"
     content: "2017 - 2021 • Informatika ágazat"
   - name: "Mathias Corvinus Collegium (MCC)"
@@ -22,6 +20,8 @@ education:
     content: "2021 - 2022 • Külsős tag"
   - name: "Modul University Vienna"
     content: "2024 Jun • Summer School • The World of Startups in CEE"
+  - name: "Szegedi Tudományegyetem"
+    content: "2021 - 2025 • Gazdaságinformatikus (BSc) hallgató"
 
 # experience
 experience:
@@ -29,9 +29,9 @@ experience:
   title: "Szakmai tapasztalat"
   experience_list:
   - "Szegedi Tudományegyetem - Demonstrátor (számítógép hálózatok, 2022 ősz)"
-  - "Enterprise Group - Junior Java developer (2023. február-augusztus)"
   - "FintechX - Business Analyst (2024. február - )"
   - "Brain Bar - Diáknagykövet (2023 - )"
+  - "Enterprise Group - Junior Java developer (2023. február-augusztus)"
 ---
 
 Varga Márk vagyok, gazdaságinformatikus, a Szegedi Tudományegyetemen végeztem. Mindig is érdekelt a technológia és az üzleti folyamatok kapcsolata, ezért tanulmányaim és szakmai tapasztalataim is ezen a területen összpontosulnak.

@@ -16,7 +16,7 @@ author = "Themefisher"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 # contact info
 address = "Hungary, Szeged"
-email = "hello@vargamark.site"
+email = "hello@markvarga.site"
 # contact form action
 contact_form_action = "https://formspree.io/f/xjkyawyj" # contact form works with 
 # search
@@ -60,12 +60,12 @@ preloader = "" # use jpg, png, svg or gif format.
 # Banner
 [banner]
 enable = true
-title_large = "Üdvözöllek **!**"
-title_small = "Varga Márk blogján"
+title_large = "Üdvözöllek a blogomon! 🚀"
+title_small = "Varga Márk szakmai és személyes blogja"
 image = "images/banner.png"
 background_image = "/images/banner-bg-shape.svg"
-content = "Gondolatok, történetek és hasznos tartalmak egy helyen. Nézz körül és fedezd fel a legújabb bejegyzéseimet!"
-button_label = "Tudj meg többet rólam"
+content = "Fedezd fel az informatív cikkeket, inspiráló interjúkat és egyedi történeteket. Merülj el a tartalmakban!""
+button_label = "Tudj meg többet"
 button_link = "about/"
 
 # Advertise
