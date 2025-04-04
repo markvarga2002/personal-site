@@ -64,7 +64,7 @@ title_large = "Üdvözöllek a blogomon! 🚀"
 title_small = "Varga Márk szakmai és személyes blogja"
 image = "images/banner.png"
 background_image = "/images/banner-bg-shape.svg"
-content = "Fedezd fel az informatív cikkeket, inspiráló interjúkat és egyedi történeteket. Merülj el a tartalmakban!""
+content = "Fedezd fel az informatív cikkeket, inspiráló interjúkat és egyedi történeteket. Merülj el a tartalmakban!"
 button_label = "Tudj meg többet"
 button_link = "about/"
 
