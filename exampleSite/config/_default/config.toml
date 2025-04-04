@@ -9,7 +9,7 @@ pagination.pagerSize = "6"
 # post excerpt
 summaryLength = "20"
 # google analytics
-googleAnalytics = "" # example: UA-123-45, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
+googleAnalytics = "G-2R2Z7Y4ZVQ" # example: G-2R2Z7Y4ZVQ, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
 
 # disable language
 disableLanguages = ["fr"] # example: ["fr"] for disable french language
