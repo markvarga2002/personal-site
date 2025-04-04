@@ -41,12 +41,10 @@
       </div>
     </div>
     
-<!-- Google Calendar Appointment Scheduling begin -->
-<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1iQSJOnXSUcVdb-dEQF4InTzMbj_ccPA3TUR6Sn-oQrhSOaUL01d47h3j1FE5S9iBL3TWr32iT?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
-<!-- end Google Calendar Appointment Scheduling -->
-    <div class="row g-2">
+
+    <div class="row g-4">
       {{ with site.Params.email }}
-      <div class="col-lg-2">
+      <div class="col-lg-4">
         <div class="card text-center">
           <a href="mailto:{{.}}"><i class="fas fa-envelope text-primary"></i>{{.}}</a>
         </div>
@@ -55,7 +53,7 @@
 
       {{ end }}
       {{ with site.Params.address }}
-      <div class="col-lg-2">
+      <div class="col-lg-4">
         <div class="card text-center">
           <li>
             <i class="fas fa-map-marker-alt text-primary"></i>{{ .| markdownify}}
@@ -63,6 +61,13 @@
         </div>
       </div>
       {{ end }}
+      <div class="col-lg-4">
+        <div class="card text-center">
+          <a href="https://calendar.app.google/hJxgX3WLTc2AiaUV8" target="_blank">
+            <i class="fas fa-calendar-alt text-primary"></i> Foglalj időpontot
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
