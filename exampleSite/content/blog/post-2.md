@@ -1,25 +1,70 @@
 ---
-title: "What you need to know about Programming"
-description: "meta description"
-image: "images/post/post-2.png"
-date: 2021-01-24T18:19:25+06:00
-categories: ["artificial intelligence"]
-tags: ["tech", "ai"]
-type: "featured" # available types: [featured/regular]
-draft: true
+title: "A Magyar IT Cégek Jövője – Csatlakozz a Kiemelkedő Kutatáshoz!"
+description: "Kutatás indult a magyar IT-szektor jövőjéről. A projekt eredménye könyv formájában is megjelenik, mélyinterjúkkal, adatbázissal és iparági elemzésekkel. Tudd meg, hogyan reagálnak a cégek a változó gazdasági környezetre!"
+image: "images/post/future-it.jpg"
+date: 2025-04-05T10:00:00+02:00
+categories: ["kutatás", "technológia", "vállalkozás"]
+tags: ["interjú", "magyar IT", "jövőbiztos"]
+type: "featured"
+draft: false
 ---
 
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+## 🚀 Figyelem, magyar IT-cégvezetők!
 
+Egy **országos jelentőségű kutatás** indul – és te is részese lehetsz!  
+A projekt célja? Feltérképezni, hogyan reagálnak a magyar technológiai vállalkozások a folyamatosan változó gazdasági környezetre. A kutatás eredménye **publikálásra kerül, sőt könyv is készül belőle**!
 
-#### Covid-19 Situation
-Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
+**📖 Cím: Jövőbiztos IT – magyar technológiai cégek válaszai a változó gazdasági környezetre**
 
-> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+### 💬 Miről van szó?
 
-#### Work From Home
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+🔍 Mélyinterjúkat készítek **magyar IT-cégvezetőkkel**, valamint egy **kérdőíves adatgyűjtés** is zajlik – célom, hogy elérjek **minél több magyar IT céget**.
 
-{{< image src="images/post/post-5.png" caption="Example Caption" alt="alter-text" height="" width="" position="center" command="fill" option="q100" class="img-fluid" title="image title" webp="false" >}}
+Ez nem csak egy kutatás.  
+Ez **belépő a jövőbe**.  
+És az ajtó most nyitva áll előtted.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
+---
+
+### 🎙️ **Vezető vagy? Meséld el a sztorid!**
+Ha cégvezetőként szívesen megosztanád tapasztalataidat, **foglalj egy időpontot egy 30 perces interjúra**:  
+👉 [Időpontfoglalás itt](https://calendar.app.google/hJxgX3WLTc2AiaUV8)
+
+Ez nem csak egy interjú – **formáld te is a narratívát** arról, hogyan éli túl és virágzik a magyar IT szektor.
+
+---
+
+### ⏱️ Nincs időd interjúra? Sebaj!
+
+Akkor töltsd ki a pár perces kérdőívemet – **gyors, egyszerű**:  
+👉 [Kérdőív kitöltése](https://forms.gle/3qHJ2Bdz7nnFJyVZ9)
+
+---
+
+### 📚 Mi készül a kutatásból?
+
+- Egy **publikált tanulmány**.
+- Egy **könyv**, amely bemutatja a legsikeresebb túlélési és növekedési stratégiákat.
+
+---
+
+### 🎯 Miért éri meg részt venni?
+
+✅ Megjelenés egy iparági publikációban  
+✅ Szakmai láthatóság és hitelesség  
+✅ Hozzáférés az eredményanyaghoz  
+✅ Lehetőség új kapcsolatok építésére
+
+---
+
+📢 **Válj részévé most.**
+
+Mert aki kimarad, az lemarad. 💡
+
+---
+
+📩 Kérdésed van? Írj bátran: [hello@markvarga.site](mailto:hello@markvarga.site)
+
+---
+
+**#jövőbiztosIT #mélyinterjú #magyartech #kutatás2025 #bookincoming**
