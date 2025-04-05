@@ -3,6 +3,7 @@ title: "A Magyar IT Cégek Jövője – Csatlakozz a Kiemelkedő Kutatáshoz!"
 description: "Kutatás indult a magyar IT-szektor jövőjéről. A projekt eredménye könyv formájában is megjelenik, mélyinterjúkkal, adatbázissal és iparági elemzésekkel. Tudd meg, hogyan reagálnak a cégek a változó gazdasági környezetre!"
 image: "images/post/future-it.jpg"
 date: 2025-04-05T10:00:00+02:00
+author: Varga Márk
 tags: ["interjú", "magyar IT", "jövőbiztos"]
 type: "featured"
 draft: false
