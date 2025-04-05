@@ -6,31 +6,31 @@
 
 
 ######################### site variables ##############################
+# customize your color and font from here.
 [params.variables]
-color_primary = "#F4A261"        # narancssárga – kiemelések, ikonok
-body_color = "#0C2D48"           # sötétkék – háttérszín
-text_color = "#E9C46A"           # világosabb narancssárga – alap szöveg
-text_dark = "#FFF"               # világos szöveg sötét háttéren
-text_light = "#E9C46A"           # világos árnyalat a kiemelésekhez
-border_color = "#1A3A5D"         # sötétkék világosabb árnyalata – kontúrok
+color_primary = "#F4A261"        # narancssárga – ikonok, kiemelések
+body_color = "#1B3B5F"           # világosabb, de mélykék háttér
+text_color = "#FDFDFD"           # fő szöveg – világos, de nem vakító
+text_dark = "#FFFFFF"            # erősen világos szöveg
+text_light = "#E9C46A"           # világos narancs – halványabb szöveg, árnyalat
+border_color = "#2D4D70"         # világosabb kékszürke – finom kontúr
 black = "#000"
 white = "#FFF"
-light = "#133A5E"                # világosabb háttér az elemek kiemeléséhez
+light = "#29476B"                # világosabb háttérszín részelemekhez
 
 # font variables
-font_size = "15px"               # maradhat az alapértelmezett méret
+font_size = "15px"
+font_scale = "1.3"
 
-# Font Scale Sizes
-font_scale = "1.3"               # kissé nagyított tipográfia
-
-# Betűtípus: modern, tech-jellegű, mégis olvasható
-font_primary = "Raleway:wght@400;600"
+# Modern, tech hangulatú, de elegáns betűtípusok
+font_primary = "Rubik:wght@400;500;700"
 font_primary_type = "sans-serif"
 
 font_secondary = "Merriweather Sans:wght@400;700"
 font_secondary_type = "sans-serif"
 
 font_icon = "Font Awesome 6 Free"
+
 
 
 ############################# Plugins ##############################
