@@ -12,7 +12,7 @@ logo_text = "Mark"
 navbar_fixed = false
 # OpenGraph / Twitter Card metadata
 description = "This is meta description"
-author = "Themefisher"
+author = "Varga Márk"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 # contact info
 address = "Hungary, Szeged"
