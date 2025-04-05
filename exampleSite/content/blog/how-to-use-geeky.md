@@ -73,22 +73,26 @@ Look for a folder named `exampleSite`.This is where you'll customize your blog t
 In this file, you can make some changes to customize the look of your blog. For example, you can change the main color of your blog's theme by replacing the current color in `color_primary` with your desired color. You can also update other options, like the font size, to match your style.
 
 ```toml
-    ######################### site variables ##############################
-    # customize your color and font from here.
-    [params.variables]
-    color_primary = "#2ba283"
-    body_color = "#FFF"
-    text_color = "#555"
-    text_dark = "#222"
-    text_light = "#999"
-    border_color = "#E1E1E1"
-    black = "#000"
-    white = "#FFF"
-    light = "#f2f2f2"
+   ######################### site variables ##############################
+# customize your color and font from here.
+[params.variables]
+color_primary = "#0C2D48"  
+body_color = "#FFF"        
+text_color = "#333"        
+text_dark = "#0C2D48"      
+text_light = "#777"        
+border_color = "#E1E1E1"   
+black = "#000"
+white = "#FFF"
+light = "#F4F4F4"          
 
-    # font variables
-    # base font size for full website, 
-    font_size = "15px" # default is 16px
+# Kiemelő színek
+highlight_primary = "#F4A261"  
+highlight_secondary = "#E9C46A" 
+
+# font variables
+# base font size for full website, 
+font_size = "15px" 
 
 
 ```
@@ -238,16 +242,15 @@ navbar_fixed = false
 
 ```toml
 description = "This is meta description"
-author = "Themefisher"
+author = "Varga Márk"
 image = "images/logo.png"
 ```
 
 - **Contact Info**: Provide your contact details.
 
 ```toml
-address = "9567 Turner Trace Apt. BC C3G8A4"
-mobile = "+211234565523"
-email = "info@email.com"
+address = "Hungary, Szeged"
+email = "hello@markvarga.site"
 ```
 
 - **Search**: Enable or disable the search feature.
@@ -259,19 +262,19 @@ search = true
 - **Posts Related Titles & Contents**: Customize the titles and buttons for posts related sections.
 
 ```toml
-categories_title = "Blog Categories"
-posts_title = "Featured"
-featured_post_title = "Featured Post"
-recent_post_title = "Recent Post"
-featured_post_button = "Featured"
-recent_post_button = "Recent"
-read_more_button = "Read more"
-previous_button = "Previous"
-next_button = "Next"
-related_posts = "Related Posts"
-showing_posts = "Showing Post From"
-no_categories_found = "No Categories Found"
-no_tags_found = "No Tags Found"
+categories_title = "Blogkategóriák"
+posts_title = "Kiemelt"
+featured_post_title = "Kiemelt bejegyzés"
+recent_post_title = "Legutóbbi bejegyzés"
+featured_post_button = "Kiemelt"
+recent_post_button = "Legutóbbi"
+read_more_button = "Tovább olvasom"
+previous_button = "Előző"
+next_button = "Következő"
+related_posts = "Kapcsolódó bejegyzések"
+showing_posts = "Megjelenített bejegyzés innen"
+no_categories_found = "Nem találhatók kategóriák"
+no_tags_found = "Nem találhatók címkék"
 ```
 
 - **Main Sections**: Specify the main sections of your blog.
@@ -283,13 +286,13 @@ mainSections = ["blog"]
 - **About Widget Content**: Customize the content for the about widget.
 
 ```toml
-about_widget_content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel in in donec iaculis tempasus odio nunc laoreet . Libero ullam rgscorper."
+about_widget_content = "Üdvözlünk a blogunkon! Itt hasznos cikkeket, iparági híreket és szakértői tippeket találsz. Célunk, hogy inspiráljunk és értékes információkat nyújtsunk olvasóimnak."
 ```
 
 - **Footer Content**: Customize the footer content.
 
 ```toml
-footer_content = "Lorem ipsum dolor sit amet, consectetur adipiscing. donec iaculis tempasus laoreet. Libero ullam rgscorper."
+footer_content = footer_content = "© 2025 Minden jog fenntartva. Köszönjük, hogy ellátogattál hozzánk! Kövess minket a közösségi médiában a legfrissebb hírekért és tartalmakért."
 ```
 
 - **Custom Script**: Add any custom scripts you need.
@@ -302,7 +305,7 @@ custom_script= ""
 
 ```toml
 theme_copyright = true
-copyright = "Copyright by your company"
+copyright = "Copyright by Mark Varga"
 ```
 
 - **404 Page**: Customize the text for the 404 error page.
