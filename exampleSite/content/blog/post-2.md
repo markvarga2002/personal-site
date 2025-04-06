@@ -28,7 +28,7 @@ Ez **belépő a jövőbe**.
 
 ### 🎙️ **Vezető vagy? Meséld el a sztorid!**
 Ha cégvezetőként szívesen megosztanád tapasztalataidat, **foglalj egy időpontot egy 30 perces interjúra**:  
-👉 [Időpontfoglalás itt](https://calendar.app.google/hJxgX3WLTc2AiaUV8)
+👉 [Időpontfoglalás itt](https://calendar.app.google/uXASRsvCuK8gpXP86)
 
 Ez nem csak egy interjú – **formáld te is a narratívát** arról, hogyan éli túl és virágzik a magyar IT szektor.
 
