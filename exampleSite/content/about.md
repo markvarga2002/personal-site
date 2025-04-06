@@ -42,10 +42,10 @@ Korábban szoftverfejlesztésben is szereztem tapasztalatot, emellett aktívan j
 
 Szabadidőmben szívesen kísérletezem új technológiákkal, és keresem azokat az innovációs lehetőségeket, amelyek gyakorlati hatással lehetnek a mindennapi életre. Emellett figyelemmel követem az üzleti trendeket és a digitális megoldások fejlődését.
 
-## Egyéb említések / Médiamegjelenések
-
-- [Miskolci iskolakonferencia](https://mcc.ro/hir/miskolci-iskolakonferencias-elmenyek)
+#### Egyéb említések / Médiamegjelenések
 - [Brain Bar profil](https://brainbar.com/munkatars/varga-mark)
 - [MCC moderálás](https://mcc.hu/hir/migracio-es-antiszemitizmus-nyugaton)
-- [Linux Alapok Könyv](https://archivum.gdszeged.hu/index.php/VargaMark_202103)
+- [Linux alapok](https://archivum.gdszeged.hu/index.php/VargaMark_202103) - [Könyv](https://rukkola.hu/termek/linux-alapok/)
+- [Miskolci iskolakonferencia](https://mcc.ro/hir/miskolci-iskolakonferencias-elmenyek)
+
 
