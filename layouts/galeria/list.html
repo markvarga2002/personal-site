@@ -1,13 +1,15 @@
-{{ define "main" }}
-<section class="gallery-page container">
-  <h1 class="text-center">Galéria</h1>
-  <div class="gallery-grid">
-    {{ $images := resources.Match "images/gallery/*" }}
-    {{ range $images }}
-      <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria">
-        <img src="{{ .RelPermalink }}" alt="{{ .Name }}">
-      </a>
+<section class="gallery-grid">
+    {{ range .Pages }}
+      {{ with .Params.image }}
+        <div class="gallery-item">
+          <a href="{{ . | relURL }}" class="glightbox">
+            <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+            <div class="hover-info">
+              {{ with $.Params.city }}<span>{{ . }}</span>{{ end }}
+            </div>
+          </a>
+        </div>
+      {{ end }}
     {{ end }}
-  </div>
-</section>
-{{ end }}
+  </section>
+  
