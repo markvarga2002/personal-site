@@ -49,6 +49,13 @@
     },
     active: () => {sessionStorage.fontsLoaded = true}
   });
+  
+</script>
+<script src="{{ "plugins/glightbox.min.js" | relURL }}"></script>
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
 </script>
 
 <!-- progressive web app -->
