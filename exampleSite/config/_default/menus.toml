@@ -17,9 +17,15 @@ url = "contact/"
 weight = 3
 
 [[main]]
+identifier = "galeria"
+name = "Galéria"
+url = "/galeria/"
+weight = 4
+
+[[main]]
 name = "Oldalak"
 url = "#"
-weight = 3
+weight = 5
 hasChildren = true
 
   [[main]]
@@ -55,8 +61,3 @@ name = "Adatvédelmi irányelvek"
 url = "privacy-policy/"
 weight = 4
 
-[[main]]
-identifier = "galeria"
-name = "Galéria"
-url = "/galeria/"
-weight = 50
