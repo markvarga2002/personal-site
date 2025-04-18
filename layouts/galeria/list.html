@@ -1,13 +1,15 @@
-{{ define "main" }}
-<section class="gallery-page container">
-  <h1 class="text-center">Galéria</h1>
-  <div class="gallery-grid">
+<div class="gallery-grid">
     {{ $images := resources.Match "images/gallery/*" }}
     {{ range $images }}
-      <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria">
+      {{ $filename := .Name | strings.TrimSuffix (path.Ext .Name) }}
+      {{ $city := index (split $filename "-") 0 | title }}
+  
+      <a href="{{ .RelPermalink }}" class="glightbox gallery-item" data-gallery="galeria">
         <img src="{{ .RelPermalink }}" alt="{{ .Name }}">
+        <div class="hover-info">
+          <span>{{ $city }}</span>
+        </div>
       </a>
     {{ end }}
   </div>
-</section>
-{{ end }}
+  
