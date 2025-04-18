@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h1>Galéria</h1>
+
+<div class="gallery">
+  {{ $images := resources.Match "images/gallery/*" }}
+  {{ if not $images }}
+    <p><strong>Nincs kép az assets/images/gallery mappában.</strong></p>
+  {{ end }}
+
+  {{ range $images }}
+    {{ $resized := .Fit "600x400" }}
+    <div class="thumb">
+      <img src="{{ $resized.RelPermalink }}" alt="{{ .Name }}">
+    </div>
+  {{ end }}
+</div>
+{{ end }}
