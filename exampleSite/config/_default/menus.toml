@@ -54,3 +54,9 @@ weight = 3
 name = "Adatvédelmi irányelvek"
 url = "privacy-policy/"
 weight = 4
+
+[[main]]
+identifier = "galeria"
+name = "Galéria"
+url = "/galeria/"
+weight = 50

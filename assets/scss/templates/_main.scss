@@ -224,7 +224,13 @@
     }
   }
 }
-
+.galeria-img {
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
 // contact
 .contact {
   h2 {
