@@ -1,15 +1,12 @@
-{{ define "main" }}
-<h1>Galéria</h1>
-
 <div class="gallery-grid">
-  {{ $images := resources.Match "images/gallery/*" }}
-  {{ range $images }}
-    {{ $resized := .Fill "600x400 Center" }}
-    <div class="gallery-item">
-      <a href="{{ .RelPermalink }}" target="_blank">
-        <img src="{{ $resized.RelPermalink }}" alt="{{ .Name }}">
-      </a>
-    </div>
-  {{ end }}
-</div>
-{{ end }}
+    {{ $images := resources.Match "images/gallery/*" }}
+    {{ range $images }}
+      {{ $resized := .Fill "600x400 Center" }}
+      <div class="gallery-item" data-location="{{ .Name | replaceRE "[-_]" " " }}">
+        <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ .Name }}">
+          <img src="{{ $resized.RelPermalink }}" alt="{{ .Name }}">
+        </a>
+      </div>
+    {{ end }}
+  </div>
+  
