@@ -27,5 +27,9 @@
 {{ end }}
 {{ end }}
 {{ $styles := $styles | append (resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS) }}
-{{ $styles := $styles | resources.Concat "/css/style.css" | minify | fingerprint "sha512"}}
+{{ $scss := resources.Get "scss/style.scss" | toCSS }}
+{{ $css1 := resources.Get "css/valami.css" }}
+{{ $allStyles := slice $scss $css1 | resources.Concat }}
+<link rel="stylesheet" href="{{ $allStyles.RelPermalink }}">
+<link rel="stylesheet" href="/plugins/glightbox.min.css">
 <style type="text/css">{{$styles.Content | safeCSS}}</style>
