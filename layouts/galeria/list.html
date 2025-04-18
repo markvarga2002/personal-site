@@ -1,12 +1,11 @@
 {{ define "main" }}
-<section class="gallery-grid container">
-  <h1 class="text-center mb-5">Galéria</h1>
-
+<section class="gallery-section py-8">
+  <h1 class="text-center text-3xl font-bold mb-8">Galéria</h1>
   <div id="justified-gallery" class="justified-gallery">
     {{ $images := resources.Match "images/gallery/*" }}
     {{ range $images }}
-      <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" title="{{ .Name }}">
-        <img src="{{ .RelPermalink }}" alt="{{ .Name }}">
+      <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ .Name }}">
+        <img src="{{ .RelPermalink }}" alt="{{ .Name }}" loading="lazy">
       </a>
     {{ end }}
   </div>

@@ -1,80 +1,83 @@
-<!-- JS Plugins + Main script -->
-{{ $scripts := slice }}
-{{ $bootstrap := resources.Get "js/bootstrap.js" }}
-{{ $params := dict }}
-{{ $sourceMap := cond hugo.IsProduction "" "inline" }}
-{{ $opts := dict "sourceMap" $sourceMap "target" "es2018" "params" $params }}
-{{ $bootstrap = $bootstrap | js.Build $opts }}
-{{ if hugo.IsProduction }}
-  {{ $bootstrap = $bootstrap | fingerprint "sha512" }}
-{{ end }}
-<script crossorigin="anonymous" defer {{ if hugo.IsProduction }}integrity="{{ $bootstrap.Data.Integrity }}"{{end}} type="application/javascript">{{$bootstrap.Content | safeJS}}</script>
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- JS Plugins + Main script -->
+<!-- Justified Gallery CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
+
+<!-- GLightbox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+<!-- Justified Gallery JS -->
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<!-- Masonry JS -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<!-- Bootstrap from Hugo Assets -->
+{{ $bootstrap := resources.Get "js/bootstrap.js" | js.Build (dict "sourceMap" (cond hugo.IsProduction "" "inline") "target" "es2018") }}
+{{ if hugo.IsProduction }}{{ $bootstrap = $bootstrap | fingerprint "sha512" }}{{ end }}
+<script crossorigin="anonymous" defer {{ if hugo.IsProduction }}integrity="{{ $bootstrap.Data.Integrity }}"{{ end }} type="application/javascript">
+  {{ $bootstrap.Content | safeJS }}
+</script>
+
+<!-- Site-wide Scripts -->
 {{ $scripts := slice }}
 {{ range site.Params.plugins.js }}
   {{ if findRE "^http" .link }}
-    <script
-      src="{{ .link | relURL }}"
-      type="application/javascript"
-      {{ .attributes | safeHTMLAttr }}></script>
+    <script src="{{ .link | relURL }}" type="application/javascript" {{ .attributes | safeHTMLAttr }}></script>
   {{ else }}
     {{ $scripts = $scripts | append (resources.Get .link) }}
   {{ end }}
 {{ end }}
 
-<!-- search script -->
+<!-- Search Support -->
 {{ if site.Params.search }}
-  {{ $scripts = $scripts | append (resources.Get "plugins/search/fuse.js" ) }}
-  {{ $scripts = $scripts | append (resources.Get "plugins/search/search.js" ) }}
+  {{ $scripts = $scripts | append (resources.Get "plugins/search/fuse.js") }}
+  {{ $scripts = $scripts | append (resources.Get "plugins/search/search.js") }}
 {{ end }}
 
-<!-- main script -->
-{{ $scripts = $scripts | append (resources.Get "js/script.js") }}
-{{ $scripts = $scripts | resources.Concat "js/scripts.js" }}
-{{ if hugo.IsProduction }}
-  {{ $scripts = $scripts | fingerprint "sha512" }}
-{{ end }}
-<script crossorigin="anonymous" defer {{ if hugo.IsProduction }}integrity="{{ $scripts.Data.Integrity }}"{{end}} type="application/javascript">{{$scripts.Content | safeJS}}</script>
+<!-- Main script -->
+{{ $scripts = $scripts | append (resources.Get "js/script.js") | resources.Concat "js/scripts.js" }}
+{{ if hugo.IsProduction }}{{ $scripts = $scripts | fingerprint "sha512" }}{{ end }}
+<script crossorigin="anonymous" defer {{ if hugo.IsProduction }}integrity="{{ $scripts.Data.Integrity }}"{{ end }} type="application/javascript">
+  {{ $scripts.Content | safeJS }}
+</script>
 
-<!-- font family -->
-{{ $pf:= site.Params.variables.font_primary }}
-{{ $sf:= site.Params.variables.font_secondary }}
-<script type="application/javascript">
+<!-- Webfont Loader -->
+<script>
   WebFont.load({
     google: {
-      api: 'https://fonts.googleapis.com/css2',
-      families: ['{{$pf | default `Lato:wght@400`}}{{if not $sf}}&display=swap{{end}}'{{with $sf}},'{{. | default `Lato:wght@400`}}&display=swap'{{end}}],
-      version: 2
+      families: [
+        '{{ site.Params.variables.font_primary | default "Lato:wght@400" }}',
+        '{{ site.Params.variables.font_secondary | default "Lato:wght@400" }}'
+      ]
     },
-    active: () => {sessionStorage.fontsLoaded = true}
+    active: () => { sessionStorage.fontsLoaded = true; }
   });
 </script>
 
-<!-- progressive web app -->
-{{ partialCached "pwa.html" . }}
-
-<!-- cookie consent -->
-{{ partialCached "cookie-consent.html" . }}
-
-<!-- google adsense -->
-{{ partialCached "adsense-script.html" . }}
-
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="{{ "js/masonry-init.js" | relURL }}"></script>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<!-- Init Justified Gallery + GLightbox -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const gallery = document.querySelector("#gallery");
-    if (gallery) {
-      $(gallery).justifiedGallery({
-        rowHeight: 200,
+    const gallery = $('#justified-gallery');
+    if (gallery.length > 0) {
+      gallery.justifiedGallery({
+        rowHeight: 220,
         margins: 5,
         captions: true,
         lastRow: "nojustify",
-        waitThumbnailsLoad: true,
+        waitThumbnailsLoad: true
+      }).on('jg.complete', function () {
+        GLightbox({ selector: '.glightbox' });
       });
     }
   });
 </script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
+
+<!-- Optional: PWA, Cookies, Adsense -->
+{{ partialCached "pwa.html" . }}
+{{ partialCached "cookie-consent.html" . }}
+{{ partialCached "adsense-script.html" . }}
