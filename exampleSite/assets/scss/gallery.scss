@@ -23,23 +23,22 @@
     transform: scale(1.05);
   }
   .gallery-item {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hover-info {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 0.5rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .gallery-item:hover .hover-info {
-    opacity: 1;
-  }
-  
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-info {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .hover-info {
+  opacity: 1;
+}
