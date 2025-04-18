@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section class="container py-5">
+  <h1 class="mb-4">{{ .Title }}</h1>
+  <div class="row">
+    {{ $images := resources.Match "images/gallery/*" }}
+    {{ range $images }}
+      {{ $img := . | resources.Publish }}
+      <div class="col-md-4 mb-4">
+        <img src="{{ $img.RelPermalink }}" alt="Galéria kép" class="img-fluid rounded">
+      </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

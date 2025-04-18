@@ -1,14 +1,17 @@
 {{ define "main" }}
-<section class="container py-5">
-  <h1 class="mb-4">{{ .Title }}</h1>
-  <div class="row">
-    {{ $images := resources.Match "images/gallery/*" }}
-    {{ range $images }}
-      {{ $img := . | resources.Publish }}
-      <div class="col-md-4 mb-4">
-        <img src="{{ $img.RelPermalink }}" alt="Galéria kép" class="img-fluid rounded">
-      </div>
-    {{ end }}
-  </div>
-</section>
+<h1>Galéria</h1>
+
+<div class="gallery">
+  {{ $images := resources.Match "images/gallery/*" }}
+  {{ if not $images }}
+    <p><strong>Nincs kép az assets/images/gallery mappában.</strong></p>
+  {{ end }}
+
+  {{ range $images }}
+    {{ $resized := .Fit "600x400" }}
+    <div class="thumb">
+      <img src="{{ $resized.RelPermalink }}" alt="{{ .Name }}">
+    </div>
+  {{ end }}
+</div>
 {{ end }}
