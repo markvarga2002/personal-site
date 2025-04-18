@@ -1,7 +1,7 @@
 {{ define "main" }}
-<section class="gallery-page container">
+<section class="gallery-grid">
   <h1 class="text-center">Galéria</h1>
-  <div class="gallery-grid">
+  <div class="gallery-item">
     {{ $images := resources.Match "images/gallery/*" }}
     {{ range $images }}
       <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria">
