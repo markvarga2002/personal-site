@@ -8,7 +8,7 @@
             {{ $name := replace .Name (path.Ext .Name) "" }}
             {{ $parts := split $name "-" }}
             {{ $caption := index $parts (sub (len $parts) 1) }}
-            {{ $thumb := .Fit "400x300" }} <!-- Gyors betöltéshez: kisebb kép -->
+            {{ $thumb := .Resize "600x" }} <!-- Csak szélességet fixál, magasság automatikus -->
             <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ $caption }}">
                 <img src="{{ $thumb.RelPermalink }}" alt="{{ $caption }}" loading="lazy">
             </a>
