@@ -1,17 +1,18 @@
 {{ define "main" }}
 <section class="gallery-section py-8">
     <br>
-  <h1 class="text-center text-3xl font-bold mb-8">Galéria</h1>
-  <div id="justified-gallery" class="justified-gallery">
-    {{ $images := resources.Match "images/gallery/*" }}
-    {{ range sort $images "Name" "desc" }}
-      {{ $name := replace .Name (path.Ext .Name) "" }}
-      {{ $parts := split $name "-" }}
-      {{ $caption := index $parts (sub (len $parts) 1) }}
-      <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ $caption }}">
-        <img src="{{ .RelPermalink }}" alt="{{ $caption }}" loading="lazy">
-      </a>
-    {{ end }}
-  </div>
+    <h1 class="text-center text-3xl font-bold mb-8">Galéria</h1>
+    <div id="justified-gallery" class="justified-gallery">
+        {{ $images := resources.Match "images/gallery/*" }}
+        {{ range sort $images "Name" "desc" }}
+            {{ $name := replace .Name (path.Ext .Name) "" }}
+            {{ $parts := split $name "-" }}
+            {{ $caption := index $parts (sub (len $parts) 1) }}
+            {{ $thumb := .Fit "400x300" }} <!-- Gyors betöltéshez: kisebb kép -->
+            <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ $caption }}">
+                <img src="{{ $thumb.RelPermalink }}" alt="{{ $caption }}" loading="lazy">
+            </a>
+        {{ end }}
+    </div>
 </section>
 {{ end }}
