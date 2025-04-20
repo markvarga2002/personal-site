@@ -1,17 +1,59 @@
 {{ define "main" }}
 <section class="gallery-section py-8">
-    <br>
   <h1 class="text-center text-3xl font-bold mb-8">Galéria</h1>
-  <div id="justified-gallery" class="justified-gallery">
+  <div id="justified-gallery" class="justified-gallery grid grid-cols-2 md:grid-cols-4 gap-4">
     {{ $images := resources.Match "images/gallery/*" }}
     {{ range sort $images "Name" "desc" }}
       {{ $name := replace .Name (path.Ext .Name) "" }}
       {{ $parts := split $name "-" }}
       {{ $caption := index $parts (sub (len $parts) 1) }}
-      <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ $caption }}">
-        <img src="{{ .RelPermalink }}" alt="{{ $caption }}" loading="lazy">
-      </a>
+      <div class="relative group">
+        <a href="{{ .RelPermalink }}" class="glightbox block" data-gallery="galeria" data-title="{{ $caption }}">
+          <img src="{{ .RelPermalink }}" alt="{{ $caption }}" loading="lazy" class="rounded shadow-md">
+        </a>
+        <button 
+          class="like-btn absolute bottom-2 right-2 bg-white/80 rounded-full p-2 hover:bg-pink-100 transition" 
+          data-img="{{ $name }}">
+          ❤️ <span class="like-count">0</span>
+        </button>
+      </div>
     {{ end }}
   </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.like-btn').forEach(btn => {
+    const imgName = btn.dataset.img;
+    const key = `liked-${imgName}`;
+    const countKey = `like-count-${imgName}`;
+
+    // Initialize like count from localStorage
+    const savedCount = localStorage.getItem(countKey);
+    if (savedCount !== null) {
+      btn.querySelector('.like-count').textContent = savedCount;
+    }
+
+    // If already liked, disable button
+    if (localStorage.getItem(key)) {
+      btn.disabled = true;
+      btn.classList.add('opacity-50', 'cursor-not-allowed');
+    }
+
+    btn.addEventListener('click', () => {
+      if (localStorage.getItem(key)) return;
+
+      // Get current count
+      let count = parseInt(localStorage.getItem(countKey) || "0");
+      count++;
+      localStorage.setItem(countKey, count);
+      localStorage.setItem(key, true);
+
+      btn.querySelector('.like-count').textContent = count;
+      btn.disabled = true;
+      btn.classList.add('opacity-50', 'cursor-not-allowed');
+    });
+  });
+});
+</script>
 {{ end }}
