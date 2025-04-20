@@ -6,9 +6,9 @@
     {{ range sort $images "Name" "desc" }}
       {{ $name := replace .Name (path.Ext .Name) "" }}
       {{ $caption := substr $name (sub (len $name) 8) 8 }}
-      {{ $thumb := .Resize "400x webp" }}
+      {{ $thumbPath := printf "/thumbs/gallery/%s" .Name }}
       <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ $caption }}">
-        <img src="{{ $thumb.RelPermalink }}" alt="{{ $caption }}" loading="lazy">
+        <img src="{{ $thumbPath }}" alt="{{ $caption }}" loading="lazy">
       </a>
     {{ end }}
   </div>
