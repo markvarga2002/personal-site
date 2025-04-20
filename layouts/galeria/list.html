@@ -5,9 +5,9 @@
     {{ $images := resources.Match "images/gallery/*" }}
     {{ range sort $images "Name" "desc" }}
     {{ $name := replace .Name (path.Ext .Name) "" }}
-    <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ slice $name (sub (len $name) 8) }}">    
-        <img src="{{ .RelPermalink }}" alt="{{ .Name }}" loading="lazy">
-      </a>
+{{ $caption := substr $name (sub (len $name) 8) 8 }}
+<a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ $caption }}">
+  <img src="{{ .RelPermalink }}" alt="{{ $caption }}" loading="lazy"></a>    
     {{ end }}
   </div>
 </section>
