@@ -4,7 +4,8 @@
   <div id="justified-gallery" class="justified-gallery">
     {{ $images := resources.Match "images/gallery/*" }}
     {{ range sort $images "Name" "desc" }}
-    <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ slice (trimSuffix (path.Base .Name) (path.Ext .Name)) -8 }}">
+    {{ $name := replace .Name (path.Ext .Name) "" }}
+    <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ slice $name (sub (len $name) 8) }}">    
         <img src="{{ .RelPermalink }}" alt="{{ .Name }}" loading="lazy">
       </a>
     {{ end }}
