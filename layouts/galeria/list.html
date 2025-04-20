@@ -6,19 +6,19 @@
     {{ range sort $images "Name" "desc" }}
       {{ $name := replace .Name (path.Ext .Name) "" }}
       {{ $caption := substr $name (sub (len $name) 8) 8 }}
-      {{ $thumb := .Fit "400x300" }}
-      {{ $webp := $thumb.Convert "webp" }}
+      {{ $thumb := .Resize "400x300" }}
+      {{ $webp := $thumb | toWebP }}
       {{ $fullWebp := .Convert "webp" }}
-<a href="{{ $fullWebp.RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ $caption }}">
-  <img 
-    src="{{ $webp.RelPermalink }}" 
-    alt="{{ $caption }}" 
-    loading="lazy" 
-    width="{{ $webp.Width }}" 
-    height="{{ $webp.Height }}"
-    srcset="{{ $webp.RelPermalink }} 1x, {{ $thumb.RelPermalink }} 2x"
-    >
-</a>
+      <a href="{{ $fullWebp.RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ $caption }}">
+        <img 
+          src="{{ $webp.RelPermalink }}" 
+          alt="{{ $caption }}" 
+          loading="lazy" 
+          width="{{ $thumb.Width }}" 
+          height="{{ $thumb.Height }}"
+          srcset="{{ $thumb.RelPermalink }} 1x, {{ $thumb.RelPermalink }} 2x"
+        >
+      </a>
     {{ end }}
   </div>
 </section>
