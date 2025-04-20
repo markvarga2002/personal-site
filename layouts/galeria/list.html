@@ -6,19 +6,9 @@
     {{ range sort $images "Name" "desc" }}
       {{ $name := replace .Name (path.Ext .Name) "" }}
       {{ $caption := substr $name (sub (len $name) 8) 8 }}
-
-      {{ $resized := .Fit "800x600 q75" }}
-      {{ $webp := $resized | images.Convert "webp" }}
-
+      {{ $thumb := .Fit "600x400 webp" }}
       <a href="{{ .RelPermalink }}" class="glightbox" data-gallery="galeria" data-title="{{ $caption }}">
-        <img 
-          src="{{ $webp.RelPermalink }}" 
-          alt="{{ $caption }}" 
-          loading="lazy"
-          width="{{ $webp.Width }}"
-          height="{{ $webp.Height }}"
-          srcset="{{ $webp.RelPermalink }} 1x, {{ $resized.RelPermalink }} 2x"
-        >
+        <img src="{{ $thumb.RelPermalink }}" alt="{{ $caption }}" loading="lazy">
       </a>
     {{ end }}
   </div>
