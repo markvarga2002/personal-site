@@ -2,10 +2,10 @@
 title: "Ki kapja a tapsot, ha a csapat nyer? – Egy kutatás a sztárok hatásáról a közös sikerekben"
 description: "Egy kutatás bemutatja, hogyan oszlik meg a hírnév a csapatsikerek során: vajon mindenki részesül az elismerésből, vagy csak a sztárok viszik a prímet?"
 image: "images/post/1_pic.png"
-date: 2025-04-21T18:19:25+06:00
+date: 2025-04-20T18:19:25+06:00
 categories: ["kutatás", "csapatmunka"]
 tags: ["hírnév", "siker", "társadalomtudomány"]
-type: "featured"
+type: "regular"
 draft: false
 sitemapExclude: false
 ---
