@@ -2,7 +2,7 @@
 title: "Valódi vagy csak tűnik úgy? A virtuális influenszerek identitásának nyomában"
 description: "A virtuális influenszerek világában egyre nagyobb szerepük van a digitális személyiségeknek, akik képesek kapcsolatot építeni a közönséggel. De mit jelent mindez az identitásuk szempontjából, és hogyan befolyásolják őket a követők?"
 image: "images/post/post-6.png"
-date: 2025-04-24T18:19:25+06:00
+date: 2025-04-21T18:19:25+06:00
 categories: ["Közösségi média", "Digitális kultúra", "Technológia"]
 tags: ["virtuális influenszerek", "digitális identitás", "mesterséges intelligencia", "követők", "számítógépes generálás"]
 type: "regular" # available types: [featured/regular]

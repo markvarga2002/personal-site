@@ -2,7 +2,7 @@
 title: "A belső marketing jövője: értékteremtés a szervezeten belül"
 description: "A belső marketing szerepe a vállalatok sikerében: hogyan alakíthatunk ki értékteremtő és lojalitást növelő kapcsolatokat a munkavállalókkal?"
 image: "images/post/post-5.png"
-date: 2025-04-22
+date: 2025-05-02T18:19:25+06:00
 categories: ["Belső marketing", "Szervezeti kultúra"]
 tags: ["értékteremtés", "munkavállalói elkötelezettség", "belső marketing","lojalitás"]
 type: "featured" 
