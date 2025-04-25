@@ -2,7 +2,7 @@
 title: "KKV-k a digitális pályán: versenyképesség újratöltve"
 description: "Egy friss kutatás megmutatja, hogyan válhatnak a kis- és középvállalkozások digitális eszközökkel igazán versenyképessé – és miért nem elég pusztán technológiát venni."
 image: "images/post/post-24.png"
-date: 2025-05-10T18:19:25+06:00
+date: 2025-05-08T18:19:25+06:00
 categories: ["Üzlet", "Technológia"]
 tags: ["digitalizáció", "KKV", "versenyképesség", "vállalkozásfejlesztés"]
 type: "regular"

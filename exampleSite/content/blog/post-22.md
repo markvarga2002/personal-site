@@ -2,7 +2,7 @@
 title: "Amikor a versenytársak összefognak: így formálja át a beszállítói piacot a *coopetition* Ausztráliában"
 description: "Egymással rivalizáló cégek, akik mégis együtt dolgoznak? Az ausztrál építőipar beszállítói között ez nem sci-fi, hanem gyakorlat. Egy új kutatás megmutatja, mit nyerhetünk, ha az együttműködés nem zárja ki a versenyt."
 image: "images/post/post-22.png"
-date: 2025-05-08T18:19:25+06:00
+date: 2025-04-24T18:19:25+06:00
 categories: ["üzlet", "fenntarthatóság"]
 tags: ["ellátási lánc", "verseny és együttműködés", "építőipar", "coopetition"]
 type: "regular"
