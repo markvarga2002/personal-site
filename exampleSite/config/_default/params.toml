@@ -71,7 +71,7 @@ button_link = "about/"
 # Advertise
 [advertisement]
 image = "images/promotion.png"
-link = "https://iqc.brainbar.com/sign-up-5"
+link = "#"
 
 # cookies
 [cookies]
