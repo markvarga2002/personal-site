@@ -29,7 +29,8 @@ experience:
   title: "Szakmai tapasztalat"
   experience_list:
   - "Szegedi Tudományegyetem - Demonstrátor (számítógép hálózatok, 2022 ősz)"
-  - "FintechX - Business Analyst (2024. február - )"
+  - "FintechX - Business Analyst (2024. február - 2025. július)"
+  - "IdomSoft - Medior Business Analyst ( 2025. július - )"
   - "Brain Bar - Diáknagykövet (2023 - )"
   - "Enterprise Group - Junior Java developer (2023. február-augusztus)"
 ---
