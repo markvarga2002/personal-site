@@ -44,6 +44,7 @@ Korábban szoftverfejlesztésben is szereztem tapasztalatot, emellett aktívan j
 Szabadidőmben szívesen kísérletezem új technológiákkal, és keresem azokat az innovációs lehetőségeket, amelyek gyakorlati hatással lehetnek a mindennapi életre. Emellett figyelemmel követem az üzleti trendeket és a digitális megoldások fejlődését.
 
 #### Egyéb említések / Médiamegjelenések
+- [Kutatók éjszakája](https://app.kutatokejszakaja.hu/esemenyek/mathias-corvinus-collegium-alapitvany-1/mesterseges-intelligencia-a-gyogyitas-frontvonalan)
 - [Brain Bar profil](https://brainbar.com/munkatars/varga-mark)
 - [MCC moderálás](https://mcc.hu/hir/migracio-es-antiszemitizmus-nyugaton)
 - [Linux alapok](https://archivum.gdszeged.hu/index.php/VargaMark_202103) - [Könyv](https://rukkola.hu/termek/linux-alapok/)
