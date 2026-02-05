@@ -1,14 +1,45 @@
 {{ define "main" }}
-<div class="tura-container">
+<div style="
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+">
+
   <h1>Eljössz velem 50 km-es túrára? 🥾</h1>
 
-  <div class="buttons">
-    <button id="yesBtn" class="yes">Igen 💚</button>
-    <button id="noBtn" class="no">Nem ❤️‍🔥</button>
+  <div style="margin-top: 40px;">
+    <button
+      onclick="window.location.href='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHhka3duMXJvZTc5cDU1ejgwZHI2bDhmdWl1eDh0ZGI1NWV2NHRocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IILnKw77dzgJsW2lBy/giphy.gif'"
+      style="
+        background: #28a745;
+        color: white;
+        font-size: 20px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        margin-right: 20px;
+        cursor: pointer;
+      ">
+      Igen 💚
+    </button>
+
+    <button
+      onclick="window.location.href='https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzVmYzNxNmIwZzQ0M3VybGZ4d2o1NHN2cXZ2cnJxaWNpcmVtYWZlciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MKzU3oPvBjFV4DC36t/giphy.gif'"
+      style="
+        background: #dc3545;
+        color: white;
+        font-size: 20px;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      ">
+      Nem ❤️‍🔥
+    </button>
   </div>
 
-  <div id="gifContainer" class="hidden">
-    <img src="/images/happy.gif" alt="Boldogság">
-  </div>
 </div>
 {{ end }}
