@@ -1,65 +1,25 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-  <meta charset="UTF-8">
-  <title>Túra?</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+{{ define "main" }}
+<div class="tura-container">
+  <h1>Eljössz velem 50 km-es túrára? 🥾</h1>
 
-<body>
-  <div style="
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  ">
+  <div class="buttons">
+    <button
+      id="yesBtn"
+      class="yes"
+      onclick="window.location.href='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHhka3duMXJvZTc5cDU1ejgwZHI2bDhmdWl1eDh0ZGI1NWV2NHRocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IILnKw77dzgJsW2lBy/giphy.gif'">
+      Igen 💚
+    </button>
 
-    <h1>Eljössz velem 50 km-es túrára? 🥾</h1>
-
-    <div style="
-      margin-top: 40px;
-      display: flex;
-      gap: 30px;
-    ">
-
-      <!-- IGEN -->
-      <a
-        href="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHhka3duMXJvZTc5cDU1ejgwZHI2bDhmdWl1eDh0ZGI1NWV2NHRocyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IILnKw77dzgJsW2lBy/giphy.gif"
-        style="
-          display: inline-block;
-          background-color: #28a745;
-          color: #ffffff;
-          font-size: 20px;
-          padding: 15px 35px;
-          border-radius: 10px;
-          text-decoration: none;
-          font-weight: bold;
-        "
-      >
-        Igen 💚
-      </a>
-
-      <!-- NEM -->
-      <a
-        href="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzVmYzNxNmIwZzQ0M3VybGZ4d2o1NHN2cXZ2cnJxaWNpcmVtYWZlciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MKzU3oPvBjFV4DC36t/giphy.gif"
-        style="
-          display: inline-block;
-          background-color: #dc3545;
-          color: #ffffff;
-          font-size: 20px;
-          padding: 15px 35px;
-          border-radius: 10px;
-          text-decoration: none;
-          font-weight: bold;
-        "
-      >
-        Nem ❤️‍🔥
-      </a>
-
-    </div>
-
+    <button
+      id="noBtn"
+      class="no"
+      onclick="window.location.href='https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzVmYzNxNmIwZzQ0M3VybGZ4d2o1NHN2cXZ2cnJxaWNpcmVtYWZlciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MKzU3oPvBjFV4DC36t/giphy.gif'">
+      Nem ❤️‍🔥
+    </button>
   </div>
-</body>
-</html>
+
+  <div id="gifContainer" class="hidden">
+    <img src="/images/happy.gif" alt="Boldogság">
+  </div>
+</div>
+{{ end }}
