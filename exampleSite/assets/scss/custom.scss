@@ -10,3 +10,56 @@
 .image:hover .tooltip {
     display: block;
 }
+.tura-container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .tura-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons {
+    position: relative;
+    width: 300px;
+    height: 120px;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  button.yes {
+    background: #28a745;
+    color: white;
+    left: 0;
+  }
+  
+  button.no {
+    background: #dc3545;
+    color: white;
+    right: 0;
+  }
+  
+  #gifContainer {
+    margin-top: 2rem;
+  }
+  
+  #gifContainer img {
+    max-width: 300px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

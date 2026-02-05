@@ -37,3 +37,29 @@ images.forEach(img => {
         img.style.display = 'block';
     }
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const noBtn = document.getElementById("noBtn");
+  const yesBtn = document.getElementById("yesBtn");
+  const gif = document.getElementById("gifContainer");
+
+  if (noBtn) {
+    noBtn.addEventListener("mouseenter", () => {
+      const container = document.querySelector(".buttons");
+      const maxX = container.offsetWidth - noBtn.offsetWidth;
+      const maxY = container.offsetHeight - noBtn.offsetHeight;
+
+      const randX = Math.random() * maxX;
+      const randY = Math.random() * maxY;
+
+      noBtn.style.left = randX + "px";
+      noBtn.style.top = randY + "px";
+    });
+  }
+
+  if (yesBtn) {
+    yesBtn.addEventListener("click", () => {
+      gif.classList.remove("hidden");
+    });
+  }
+});
+
